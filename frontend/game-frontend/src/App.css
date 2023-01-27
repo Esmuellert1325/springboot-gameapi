@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+.bottom-nav {
+  border: 1px solid black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.game-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.game-conatainer-img {
+  margin-top: 3%;
+  border-radius: 5%;
+  margin-left: 30px;
+  margin-right: 30px;
+  transition: 0.6s all ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.game-conatainer-img:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+.game-conatainer-img:hover > .game-title,
+.game-conatainer-img:hover > .game-year,
+.game-conatainer-img:hover > .game-genre,
+.game-conatainer-img:hover > .game-developer
+{
+  display: block;
+}
+
+.game-title {
+  margin-top: 7%;
+  margin-left: 20%;
+  text-shadow:
+        0.07em 0 white,
+        0 0.07em white,
+        -0.07em 0 white,
+        0 -0.07em white;
+  display: none;
+}
+
+.game-year {
+  margin-top: 10%;
+  margin-left: 30%;
+  text-shadow:
+        0.07em 0 white,
+        0 0.07em white,
+        -0.07em 0 white,
+        0 -0.07em white;
+  display: none;
+}
+.game-genre {
+  margin-top: 10%;
+  margin-left: 30%;
+  text-shadow:
+        0.07em 0 white,
+        0 0.07em white,
+        -0.07em 0 white,
+        0 -0.07em white;
+  display: none;
+}
+.game-developer {
+  margin-top: 10%;
+  margin-left: 30%;
+  text-shadow:
+        0.07em 0 white,
+        0 0.07em white,
+        -0.07em 0 white,
+        0 -0.07em white;
+  display: none;
+}
+
+.game-delete-btn {
+  margin-left: 5%;
+}
+
+h1 {
+  text-align: center;
 }
