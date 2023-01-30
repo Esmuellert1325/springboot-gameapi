@@ -76,7 +76,17 @@
 .game-delete-btn {
   margin-left: 5%;
 }
-
 h1 {
   text-align: center;
+}
+
+.add-game-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-game-div > div {
+  margin: 5px 10px;
+  padding: 5px 10px;
 }
